@@ -123,32 +123,12 @@ Generated using nucleoapp.com
   content: "\ea0c";
 }
 
-.wood-phone::before {
-  content: "\ea0d";
-}
-
-.wood-percent::before {
-  content: "\ea0e";
-}
-
-.wood-new::before {
-  content: "\ea0f";
-}
-
 .wood-bulb::before {
   content: "\ea10";
 }
 
-.wood-mail::before {
-  content: "\ea11";
-}
-
 .wood-lightning::before {
   content: "\ea12";
-}
-
-.wood-information::before {
-  content: "\ea13";
 }
 
 .wood-filter::before {
@@ -177,4 +157,24 @@ Generated using nucleoapp.com
 
 .wood-arrow::before {
   content: "\ea1a";
+}
+
+.wood-percent::before {
+  content: "\ea1b";
+}
+
+.wood-new::before {
+  content: "\ea1c";
+}
+
+.wood-mail::before {
+  content: "\ea1d";
+}
+
+.wood-phone::before {
+  content: "\ea1e";
+}
+
+.wood-information::before {
+  content: "\ea1f";
 }

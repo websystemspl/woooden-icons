@@ -93,13 +93,8 @@ $icons: (
   'arrow_small': 'ea0a',
   'plus': 'ea0b',
   'pin': 'ea0c',
-  'phone': 'ea0d',
-  'percent': 'ea0e',
-  'new': 'ea0f',
   'bulb': 'ea10',
-  'mail': 'ea11',
   'lightning': 'ea12',
-  'information': 'ea13',
   'filter': 'ea14',
   'close': 'ea15',
   'chevron_small': 'ea16',
@@ -107,6 +102,11 @@ $icons: (
   'chevron_large': 'ea18',
   'cart': 'ea19',
   'arrow': 'ea1a',
+  'percent': 'ea1b',
+  'new': 'ea1c',
+  'mail': 'ea1d',
+  'phone': 'ea1e',
+  'information': 'ea1f',
 );
 
 @function unicode($str) {
