@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="demo/css/style.css">
+	<link rel="icon" type="image/svg+xml" href="demo/favicon.svg">
+	<title>WoodenIcons Web Font</title>
+</head>
+<body>
+	<header>
+		<h1>WoodenIcons Web Font</h1>
+		<p>Generated using <a href="https://nucleoapp.com">nucleoapp.com</a></p>
+	</header>
+
+	<div id="icons-wrapper">
+		<section>
+			<ul>
+                
+                    <li>
+                        <i class="wood wood-search"></i>
+                        <p class="js-classname">wood-search</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-minus"></i>
+                        <p class="js-classname">wood-minus</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-bin"></i>
+                        <p class="js-classname">wood-bin</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-user_filled"></i>
+                        <p class="js-classname">wood-user_filled</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-star_small"></i>
+                        <p class="js-classname">wood-star_small</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-star_large"></i>
+                        <p class="js-classname">wood-star_large</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-sort"></i>
+                        <p class="js-classname">wood-sort</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-share"></i>
+                        <p class="js-classname">wood-share</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-arrow_small"></i>
+                        <p class="js-classname">wood-arrow_small</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-plus"></i>
+                        <p class="js-classname">wood-plus</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-pin"></i>
+                        <p class="js-classname">wood-pin</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-phone"></i>
+                        <p class="js-classname">wood-phone</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-percent"></i>
+                        <p class="js-classname">wood-percent</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-new"></i>
+                        <p class="js-classname">wood-new</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-bulb"></i>
+                        <p class="js-classname">wood-bulb</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-mail"></i>
+                        <p class="js-classname">wood-mail</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-lightning"></i>
+                        <p class="js-classname">wood-lightning</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-information"></i>
+                        <p class="js-classname">wood-information</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-filter"></i>
+                        <p class="js-classname">wood-filter</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-close"></i>
+                        <p class="js-classname">wood-close</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-chevron_small"></i>
+                        <p class="js-classname">wood-chevron_small</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-chevron_medium"></i>
+                        <p class="js-classname">wood-chevron_medium</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-chevron_large"></i>
+                        <p class="js-classname">wood-chevron_large</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-cart"></i>
+                        <p class="js-classname">wood-cart</p>
+												
+                    </li>
+                
+                    <li>
+                        <i class="wood wood-arrow"></i>
+                        <p class="js-classname">wood-arrow</p>
+												
+                    </li>
+                
+				<!-- list of icons here with the proper class-->
+			</ul>
+		</section>
+	</div>
+<script>
+    function SelectText(element) {
+	    var doc = document
+	        , text = element
+	        , range, selection;
+	    if (doc.body.createTextRange) {
+	        range = document.body.createTextRange();
+	        range.moveToElementText(text);
+	        range.select();
+	    } else if (window.getSelection) {
+	        selection = window.getSelection();
+	        range = document.createRange();
+	        range.selectNodeContents(text);
+	        selection.removeAllRanges();
+	        selection.addRange(range);
+	    }
+	}
+    window.onload = function() {
+    	var iconsWrapper = document.getElementById('icons-wrapper'),
+    		listItems = iconsWrapper.getElementsByTagName('li');
+			for (var i = 0; i < listItems.length; i++) {
+				listItems[i].onclick  = function fun(event) {
+					var selectedTagName = event.target.tagName.toLowerCase();
+					if( selectedTagName == 'p' || selectedTagName == 'em' ) {
+						SelectText(event.target);
+					} else if( selectedTagName == 'input' ) {
+						event.target.setSelectionRange(0, event.target.value.length);
+					}
+				}
+
+				var nameClass = listItems[i].getElementsByClassName('js-classname'),
+					ligatureEl = listItems[i].getElementsByClassName('js-ligature');
+
+				var beforeContentChar = window.getComputedStyle(listItems[i].getElementsByTagName('i')[0], '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, ""),
+					beforeContent = beforeContentChar.codePointAt(0).toString(16);
+				var beforeContentElement = document.createElement("em");
+				beforeContentElement.textContent = "\\"+beforeContent;
+
+				//create input element to copy/paste chart
+				var charCharac = document.createElement('input');
+				charCharac.setAttribute('type', 'text');
+				charCharac.setAttribute('maxlength', '1');
+				charCharac.setAttribute('readonly', 'true');
+				charCharac.setAttribute('value', beforeContentChar);
+        // insert in DOM
+				nameClass[0].after(charCharac);
+        nameClass[0].after(beforeContentElement);
+
+				// update ligature value
+				if(ligatureEl.length > 0) {
+					ligatureEl[0].innerText = ligatureEl[0].innerText.replace(/-/gu, "_");
+				}
+			}
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/*--------------------------------
+
+WoodenIcons icon font
+Generated using nucleoapp.com
+
+-------------------------------- */
+
+@font-face {
+  font-family: 'WoodenIcons';
+  src: url('../fonts/WoodenIcons.eot');
+  src: url('../fonts/WoodenIcons.eot') format('embedded-opentype'),
+       url('../fonts/WoodenIcons.woff2') format('woff2'),
+       url('../fonts/WoodenIcons.woff') format('woff'),
+       url('../fonts/WoodenIcons.ttf') format('truetype'),
+       url('../fonts/WoodenIcons.svg') format('svg');
+}
+
+/* base class */
+.wood {
+  display: inline-block;
+  font: normal normal normal 1em/1 'WoodenIcons';
+  color: inherit;
+  flex-shrink: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* size examples - relative units */
+.wood-sm {
+  font-size: 0.8em;
+}
+
+.wood-lg {
+  font-size: 1.2em;
+}
+
+/* size examples - absolute units */
+.wood-16 {
+  font-size: 16px;
+}
+
+.wood-32 {
+  font-size: 32px;
+}
+
+/* rotate the icon infinitely */
+.wood-is-spinning {
+  animation: wood-spin 1s infinite linear;
+}
+
+@keyframes wood-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* transform */
+.wood-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.wood-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.wood-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.wood-flip-y {
+  transform: scaleY(-1);
+}
+
+.wood-flip-x {
+  transform: scaleX(-1);
+}
+
+/* icons */
+.wood-search::before {
+  content: "\ea02";
+}
+
+.wood-minus::before {
+  content: "\ea03";
+}
+
+.wood-bin::before {
+  content: "\ea04";
+}
+
+.wood-user_filled::before {
+  content: "\ea05";
+}
+
+.wood-star_small::before {
+  content: "\ea06";
+}
+
+.wood-star_large::before {
+  content: "\ea07";
+}
+
+.wood-sort::before {
+  content: "\ea08";
+}
+
+.wood-share::before {
+  content: "\ea09";
+}
+
+.wood-arrow_small::before {
+  content: "\ea0a";
+}
+
+.wood-plus::before {
+  content: "\ea0b";
+}
+
+.wood-pin::before {
+  content: "\ea0c";
+}
+
+.wood-phone::before {
+  content: "\ea0d";
+}
+
+.wood-percent::before {
+  content: "\ea0e";
+}
+
+.wood-new::before {
+  content: "\ea0f";
+}
+
+.wood-bulb::before {
+  content: "\ea10";
+}
+
+.wood-mail::before {
+  content: "\ea11";
+}
+
+.wood-lightning::before {
+  content: "\ea12";
+}
+
+.wood-information::before {
+  content: "\ea13";
+}
+
+.wood-filter::before {
+  content: "\ea14";
+}
+
+.wood-close::before {
+  content: "\ea15";
+}
+
+.wood-chevron_small::before {
+  content: "\ea16";
+}
+
+.wood-chevron_medium::before {
+  content: "\ea17";
+}
+
+.wood-chevron_large::before {
+  content: "\ea18";
+}
+
+.wood-cart::before {
+  content: "\ea19";
+}
+
+.wood-arrow::before {
+  content: "\ea1a";
+}

@@ -1,0 +1,120 @@
+/*--------------------------------
+
+WoodenIcons icon font
+Generated using nucleoapp.com
+
+-------------------------------- */
+
+$wood-font-path: "../fonts" !default;
+
+@font-face {
+  font-family: 'WoodenIcons';
+  src: url('#{$wood-font-path}/WoodenIcons.eot');
+  src: url('#{$wood-font-path}/WoodenIcons.eot') format('embedded-opentype'),
+       url('#{$wood-font-path}/WoodenIcons.woff2') format('woff2'),
+       url('#{$wood-font-path}/WoodenIcons.woff') format('woff'),
+       url('#{$wood-font-path}/WoodenIcons.ttf') format('truetype'),
+       url('#{$wood-font-path}/WoodenIcons.svg') format('svg');
+}
+
+/* base class */
+.wood {
+  display: inline-block;
+  font: normal normal normal 1em/1 'WoodenIcons';
+  color: inherit;
+  flex-shrink: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* size examples - relative units */
+.wood-sm {
+  font-size: 0.8em;
+}
+
+.wood-lg {
+  font-size: 1.2em;
+}
+
+/* size examples - absolute units */
+.wood-16 {
+  font-size: 16px;
+}
+
+.wood-32 {
+  font-size: 32px;
+}
+
+/* rotate the icon infinitely */
+.wood-is-spinning {
+  animation: wood-spin 1s infinite linear;
+}
+
+@keyframes wood-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* transform */
+.wood-rotate-90  {
+	transform: rotate(90deg);
+}
+
+.wood-rotate-180 {
+	transform: rotate(180deg);
+}
+
+.wood-rotate-270 {
+	transform: rotate(270deg);
+}
+
+.wood-flip-y {
+	transform: scaleY(-1);
+}
+
+.wood-flip-x {
+	transform: scaleX(-1);
+}
+
+/* icons */
+$icons: (
+  'search': 'ea02',
+  'minus': 'ea03',
+  'bin': 'ea04',
+  'user_filled': 'ea05',
+  'star_small': 'ea06',
+  'star_large': 'ea07',
+  'sort': 'ea08',
+  'share': 'ea09',
+  'arrow_small': 'ea0a',
+  'plus': 'ea0b',
+  'pin': 'ea0c',
+  'phone': 'ea0d',
+  'percent': 'ea0e',
+  'new': 'ea0f',
+  'bulb': 'ea10',
+  'mail': 'ea11',
+  'lightning': 'ea12',
+  'information': 'ea13',
+  'filter': 'ea14',
+  'close': 'ea15',
+  'chevron_small': 'ea16',
+  'chevron_medium': 'ea17',
+  'chevron_large': 'ea18',
+  'cart': 'ea19',
+  'arrow': 'ea1a',
+);
+
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+@each $name, $code in $icons {
+  .wood-#{""+$name}::before {
+    content: unicode($code);
+  }
+}
