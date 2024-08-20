@@ -279,3 +279,11 @@ icons
   content: "\ea1f";
 }
 
+.wood-instagram::before {
+  content: "\ea20";
+}
+
+.wood-facebook::before {
+  content: "\ea21";
+}
+
