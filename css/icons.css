@@ -186,3 +186,7 @@ Generated using nucleoapp.com
 .wood-facebook::before {
   content: "\ea21";
 }
+
+.wood-alert::before {
+  content: "\ea22";
+}
